@@ -1,0 +1,10 @@
+.nav__link{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  margin-left: 35px;
+  text-decoration: none;
+}

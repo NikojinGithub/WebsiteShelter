@@ -1,0 +1,7 @@
+.header{
+  width: 94%;
+  margin: 0 auto 90px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
