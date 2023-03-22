@@ -1,0 +1,14 @@
+.help__name{
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 30px;
+  white-space: nowrap;
+}

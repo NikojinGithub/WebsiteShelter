@@ -1,10 +1,11 @@
-.content__button{
-  width: 207px;
+.friends__button{
+  width: 52px;
   height: 52px;
-  background: #F1CDB3;
-  border: none;
-  border-radius: 100px;
-  margin-top: 22px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100%;
+  margin-top: 192px;
+  cursor: pointer;
+  font-size: 20px;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -12,5 +13,5 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  cursor: pointer;
+
 }

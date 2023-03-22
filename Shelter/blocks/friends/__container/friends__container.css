@@ -1,9 +1,9 @@
-.header{
-  /* width: 94%; */
+.friends__container{
   width: 1200px;
-  /* margin: 30px auto 90px; */
-  margin: 0 auto 90px;
+  min-height: 435px;
   border: 1px solid red;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
 }

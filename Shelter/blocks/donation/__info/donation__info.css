@@ -1,0 +1,10 @@
+.donation__info{
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #B2B2B2;
+}

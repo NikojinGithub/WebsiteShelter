@@ -1,10 +1,9 @@
-.content__button{
-  width: 207px;
+.friends__nav-button{
+  width: 261px;
   height: 52px;
-  background: #F1CDB3;
-  border: none;
   border-radius: 100px;
-  margin-top: 22px;
+  border: none;
+  background-color: #F1CDB3;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -12,5 +11,7 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+  display: block;
+  margin: 60px auto 115px;
   cursor: pointer;
 }

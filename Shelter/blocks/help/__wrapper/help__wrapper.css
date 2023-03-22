@@ -1,0 +1,10 @@
+.help__wrapper{
+  width: 1026px;
+  height: 281px;
+  border: 1px solid red;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 55px 120px;
+}

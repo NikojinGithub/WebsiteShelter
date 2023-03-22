@@ -1,0 +1,8 @@
+.cards{
+  display: grid;
+  border: 1px solid blue;
+  /* width: 800px; */
+  /* height: 500px; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 90px
+}
