@@ -1,0 +1,4 @@
+.friends__button_type_active{
+  background-color: #F1CDB3;
+  pointer-events: none;
+}

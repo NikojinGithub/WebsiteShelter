@@ -7,4 +7,9 @@
   color: #CDCDCD;
   margin-left: 35px;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav__link:hover{
+  color: #FAFAFA;
 }

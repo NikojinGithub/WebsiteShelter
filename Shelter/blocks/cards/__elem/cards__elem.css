@@ -2,7 +2,13 @@
   width: 270px;
   min-height: 435px;
   border: 1px solid black;
+  border-radius: 9px;
   background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.cards__elem:hover .cards__button{
+  background-color: #F1CDB3;
 }

@@ -16,4 +16,9 @@
   border: none;
   border-radius: 9px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.donation__button:hover{
+  background-color: #FDDCC4;
 }

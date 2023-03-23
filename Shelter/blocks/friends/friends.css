@@ -1,5 +1,6 @@
 .friends{
-  width: 1200px;
+  /* max-width: 1280px; */
+  width: 100%;
   min-height: 800px;
   margin: 0 auto 0;
   padding-top: 75px;

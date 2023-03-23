@@ -1,5 +1,6 @@
 .help{
-  width: 1200px;
+  /* max-width: 1280px; */
+  width: 100%;
   /* min-height: 611px; */
   padding-top: 80px;
   margin: 0 auto 0;

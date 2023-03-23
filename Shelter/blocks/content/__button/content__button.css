@@ -13,4 +13,9 @@
   letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.content__button:hover{
+  background-color: #FDDCC4;
 }

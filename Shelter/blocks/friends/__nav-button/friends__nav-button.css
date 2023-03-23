@@ -14,4 +14,9 @@
   display: block;
   margin: 60px auto 115px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.friends__nav-button:hover{
+  background-color: #FDDCC4;
 }
