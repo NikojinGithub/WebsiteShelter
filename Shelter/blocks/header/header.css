@@ -1,9 +1,6 @@
 .header{
-  /* width: 94%; */
   width: 1200px;
-  /* margin: 30px auto 90px; */
   margin: 0 auto 90px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }

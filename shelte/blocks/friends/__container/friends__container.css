@@ -1,9 +1,0 @@
-.friends__container{
-  width: 1200px;
-  margin: 0 auto 0;
-  min-height: 435px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}

@@ -1,7 +1,6 @@
 .cards__elem{
   width: 270px;
   min-height: 435px;
-  border: 1px solid black;
   border-radius: 9px;
   background-color: #FAFAFA;
   display: flex;

@@ -1,9 +1,0 @@
-.content{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* border: 1px solid blue; */
-  /* width: 94%; */
-  width: 1200px;
-  margin: 0 auto;
-}

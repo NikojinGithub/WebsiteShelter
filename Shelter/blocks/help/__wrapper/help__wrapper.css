@@ -1,7 +1,6 @@
 .help__wrapper{
   width: 1026px;
   height: 281px;
-  border: 1px solid red;
   margin: 0 auto 100px;
   display: flex;
   flex-wrap: wrap;
