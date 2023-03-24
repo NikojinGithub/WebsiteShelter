@@ -17,9 +17,13 @@
   text-decoration: none;
   margin: 60px auto 115px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .friends__nav-button:hover{
   background-color: #FDDCC4;
+}
+
+.friends__nav-button:active{
+  opacity: .6;
 }

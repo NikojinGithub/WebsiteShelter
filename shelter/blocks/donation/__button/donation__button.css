@@ -17,9 +17,13 @@
   border: none;
   border-radius: 9px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .donation__button:hover{
   background-color: #FDDCC4;
+}
+
+.donation__button:active{
+  opacity: .6;
 }

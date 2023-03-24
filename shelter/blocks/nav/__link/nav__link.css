@@ -7,9 +7,13 @@
   color: #CDCDCD;
   margin-left: 32px;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .nav__link:hover{
   color: #FAFAFA;
+}
+
+.nav__link:active{
+  opacity: .6;
 }

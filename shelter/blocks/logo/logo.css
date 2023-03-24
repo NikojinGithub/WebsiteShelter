@@ -3,4 +3,25 @@
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  transition: .3s;
+}
+
+.logo:active{
+  opacity: .6;
+}
+
+.logo:hover .logo__title{
+  color: #FDDCC4;
+}
+
+.logo:hover .logo__title_type_pets{
+  color: #292929;
+}
+
+.logo:hover .logo__text{
+  color: #FDDCC4;
+}
+
+.logo:hover .logo__text_type_pets{
+  color: #292929;
 }

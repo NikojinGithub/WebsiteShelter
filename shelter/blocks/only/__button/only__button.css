@@ -17,9 +17,13 @@
   letter-spacing: 0.06em;
   color: #292929;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .only__button:hover{
   background-color: #FDDCC4;
+}
+
+.only__button:active{
+  opacity: .6;
 }

@@ -17,9 +17,13 @@
   align-items: center;
   justify-content: center;
   background-color: #F6F6F6;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .friends__button:hover{
   background-color: #F1CDB3;
+}
+
+.friends__button:active{
+  opacity: .6;
 }

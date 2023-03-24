@@ -10,4 +10,13 @@
   flex-direction: row;
   justify-content: flex-start;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__info:hover{
+  color: #FDDCC4;
+}
+
+.footer__info:active{
+  opacity: .6;
 }

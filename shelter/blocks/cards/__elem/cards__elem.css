@@ -11,3 +11,8 @@
 .cards__elem:hover .cards__button{
   background-color: #F1CDB3;
 }
+
+
+.cards__elem:active .cards__button{
+  opacity: .6;
+}
