@@ -1,0 +1,7 @@
+.nav__link_type_pets{
+  color: #545454;
+}
+
+.nav__link_type_pets:hover{
+  color: #292929;
+}

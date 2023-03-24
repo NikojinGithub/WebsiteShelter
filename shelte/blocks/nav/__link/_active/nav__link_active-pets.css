@@ -1,0 +1,6 @@
+.nav__link_active-pets{
+  border-bottom: 3px solid #F1CDB3;
+  color: #545454;
+  cursor: default;
+  pointer-events: none;
+}

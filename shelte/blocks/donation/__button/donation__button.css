@@ -1,0 +1,25 @@
+.donation__button{
+  width: 349px;
+  height: 43px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-bottom: 22px;
+  justify-content: space-around;
+  background-color: #F1CDB3;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.donation__button:hover{
+  background-color: #FDDCC4;
+}

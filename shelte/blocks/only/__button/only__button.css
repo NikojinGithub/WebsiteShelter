@@ -1,0 +1,25 @@
+.only__button{
+  width: 207px;
+  height: 52px;
+  background: #F1CDB3;
+  border: none;
+  border-radius: 100px;
+  margin-top: 40px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  color: #292929;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.only__button:hover{
+  background-color: #FDDCC4;
+}

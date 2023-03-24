@@ -1,0 +1,8 @@
+.footer__address{
+  width: 302px;
+  min-height: 234px;
+  margin: 16px 160px 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}

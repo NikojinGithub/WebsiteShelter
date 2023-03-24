@@ -1,0 +1,6 @@
+.nav__link_active{
+  border-bottom: 3px solid #F1CDB3;
+  color: #FAFAFA;
+  cursor: default;
+  pointer-events: none;
+}

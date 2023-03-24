@@ -1,0 +1,25 @@
+.friends__button{
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100%;
+  margin-top: 192px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+  transition: 0.5s;
+}
+
+.friends__button:hover{
+  background-color: #F1CDB3;
+}
