@@ -31,12 +31,14 @@
 
 @import url(../blocks/friends/friends.css);
 @import url(../blocks/friends/__title/friends__title.css);
+@import url(../blocks/friends/__title/_pets/friends__title_type_pets.css);
 @import url(../blocks/friends/__container/friends__container.css);
 @import url(../blocks/friends/__button/friends__button.css);
 @import url(../blocks/friends/__nav-button/friends__nav-button.css);
 
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__elem/cards__elem.css);
+@import url(../blocks/cards/_main/cards__elem_type_main.css);
 @import url(../blocks/cards/__name/cards__name.css);
 @import url(../blocks/cards/__button/cards__button.css);
 
@@ -74,6 +76,7 @@
 
 @import url(../blocks/cards/_pets/cards_type_pets.css);
 @import url(../blocks/cards/__elem/_pets/cards__elem_type_pets.css);
+@import url(../blocks/cards/_pets/cards_type_pets.css);
 
 @import url(../blocks/friends/__buttons/friends__buttons.css);
 @import url(../blocks/friends/__button/_pets/friends__button_type_pets.css);

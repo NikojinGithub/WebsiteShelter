@@ -1,4 +1,9 @@
-.cards__elem_type_pets{
-  width: 270px;
-  min-height: 435px;
+@media screen and (max-width: 1215px) {
+  .cards__elem_type_pets:nth-child(7){
+    display: none;
+  }
+  .cards__elem_type_pets:nth-child(8){
+    display: none;
+  }
 }
+
