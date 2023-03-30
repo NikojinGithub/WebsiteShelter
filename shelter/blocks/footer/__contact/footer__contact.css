@@ -7,3 +7,9 @@
   flex-direction: column;
   gap: 42px;
 }
+
+@media screen and (max-width: 1250px) {
+  .footer__contact{
+    margin: 0 60px 60px 64px;
+  }
+}

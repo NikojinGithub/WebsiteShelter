@@ -27,3 +27,9 @@
 .only__button:active{
   opacity: .6;
 }
+
+@media screen and (max-width: 1220px) {
+  .only__button{
+    margin: 27px 0 0;
+  }
+}

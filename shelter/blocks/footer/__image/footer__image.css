@@ -3,3 +3,9 @@
   height: 310px;
   margin-right: auto;
 }
+
+@media screen and (max-width: 1250px) {
+  .footer__image{
+    margin-left: auto;
+  }
+}

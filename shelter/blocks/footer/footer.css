@@ -8,3 +8,10 @@
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 1250px) {
+  .footer{
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+}

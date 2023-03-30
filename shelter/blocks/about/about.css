@@ -4,3 +4,9 @@
   display: flex;
   flex-direction: row;
 }
+
+@media screen and (max-width: 1180px){
+  .about{
+    flex-direction: column-reverse;
+  }
+}

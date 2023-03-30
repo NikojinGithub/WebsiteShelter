@@ -1,6 +1,12 @@
 .donation__img{
   margin-left: auto;
   margin-right: 30px;
-  margin-bottom: 110px;
+  margin-bottom: 113px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1110px) {
+  .donation__img{
+    margin: 45px auto 100px;
+  }
 }

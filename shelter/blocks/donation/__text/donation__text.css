@@ -2,3 +2,9 @@
   width: 380px;
   margin-right: auto;
 }
+
+@media screen and (max-width: 1110px) {
+  .donation__text{
+    margin: 0 auto 0;
+  }
+}

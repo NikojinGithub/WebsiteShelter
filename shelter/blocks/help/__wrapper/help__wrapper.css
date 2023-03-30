@@ -1,7 +1,7 @@
 .help__wrapper{
   width: 1026px;
-  height: 281px;
-  margin: 0 auto 100px;
+  min-height: 281px;
+  margin: 0 auto 82px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,12 +16,15 @@
 }
 
 
-/* @media screen and (max-width: 820px) {
+@media screen and (max-width: 1050px) {
   .help__wrapper{
+    /* min-height: 281px; */
+    width: 630px;
+    margin: 0 auto 85px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 55px 60px;
+    gap: 34px 65px;
     justify-items: start;
     justify-items: center;
   }
@@ -31,4 +34,4 @@
   .help__element:nth-child(9){
     margin-right: 0;
   }
-} */
+}

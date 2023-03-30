@@ -16,3 +16,9 @@
 .cards__elem:active .cards__button{
   opacity: .6;
 }
+
+@media screen and (max-width: 1205px){
+  .cards__elem:nth-child(3) {
+    display: none;
+  }
+}
