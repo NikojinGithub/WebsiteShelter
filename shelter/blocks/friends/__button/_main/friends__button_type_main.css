@@ -1,0 +1,17 @@
+@media screen and (max-width: 450px) {
+  .friends__button_type_main{
+    margin-top: 458px;
+    position: absolute;
+    right: 180px;
+  }
+
+  .friends__button_type_main:nth-child(1){
+    left: 68px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .friends__button_type_main{
+    right: 68px;
+  }
+}

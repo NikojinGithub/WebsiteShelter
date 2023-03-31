@@ -9,3 +9,10 @@
   color: #CDCDCD;
   margin-top: 42px;
 }
+
+@media screen and (max-width: 490px){
+  .only__subtitle{
+    margin: 20px 10px 0;
+    text-align: center;
+  }
+}

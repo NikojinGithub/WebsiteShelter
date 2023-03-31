@@ -33,3 +33,9 @@
     margin: 27px 0 0;
   }
 }
+
+@media screen and (max-width: 490px) {
+  .only__button{
+    margin-top: 32px;
+  }
+}

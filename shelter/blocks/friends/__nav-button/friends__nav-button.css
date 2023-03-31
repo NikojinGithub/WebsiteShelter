@@ -27,3 +27,10 @@
 .friends__nav-button:active{
   opacity: .6;
 }
+
+@media screen and (max-width: 450px) {
+  .friends__nav-button{
+    margin-top: 115px;
+    margin-bottom: 42px;
+  }
+}

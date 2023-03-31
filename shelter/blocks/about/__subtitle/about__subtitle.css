@@ -8,3 +8,11 @@
   margin-top: 25px;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 380px){
+  .about__subtitle{
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 24px;
+  }
+}

@@ -9,6 +9,15 @@
   text-align: center;
   letter-spacing: 0.06em;
   color: #545454;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto 60px;
+}
+
+@media screen and (max-width: 415px) {
+  .friends__title{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 39px;
+  }
 }

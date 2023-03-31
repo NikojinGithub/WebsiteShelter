@@ -13,3 +13,11 @@
     margin-right: 30px;
   }
 }
+
+@media screen and (max-width: 625px){
+  .only__img{
+    width: 260px;
+    height: 272px;
+    margin: 87px 10px 0 auto;
+  }
+}
