@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.cards__elem:hover{
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, .3);
 }
 
 .cards__elem:hover .cards__button{

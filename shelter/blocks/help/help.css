@@ -3,3 +3,9 @@
   padding-top: 78px;
   margin: 0 auto 0;
 }
+
+@media screen and (max-width: 415px) {
+  .help{
+    padding-top: 42px;
+  }
+}

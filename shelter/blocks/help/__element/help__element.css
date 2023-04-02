@@ -5,3 +5,9 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 415px) {
+  .help__element{
+    min-height: 87px;
+  }
+}

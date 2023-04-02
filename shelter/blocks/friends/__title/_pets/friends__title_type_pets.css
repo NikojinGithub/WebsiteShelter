@@ -3,3 +3,9 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .friends__title_type_pets{
+    margin-bottom: 42px;
+  }
+}

@@ -50,6 +50,7 @@
 @import url(../blocks/help/__title/help__title.css);
 @import url(../blocks/help/__wrapper/help__wrapper.css);
 @import url(../blocks/help/__element/help__element.css);
+@import url(../blocks/help/__image/help__image.css);
 
 @import url(../blocks/donation/donation.css);
 @import url(../blocks/donation/__img/donation__img.css);

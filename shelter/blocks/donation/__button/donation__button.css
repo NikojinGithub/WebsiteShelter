@@ -27,3 +27,13 @@
 .donation__button:active{
   opacity: .6;
 }
+
+@media screen and (max-width: 530px) {
+  .donation__button{
+   width: 281px;
+   height: 43px;
+   font-size: 15px;
+   margin: 22px auto 0;
+   justify-content: space-evenly;
+  }
+}

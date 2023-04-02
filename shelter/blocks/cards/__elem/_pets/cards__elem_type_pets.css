@@ -7,3 +7,22 @@
   }
 }
 
+@media screen and (max-width: 740px) {
+  .cards__elem_type_pets:nth-child(6){
+    display: none;
+  }
+  .cards__elem_type_pets:nth-child(5){
+    display: none;
+  }
+  .cards__elem_type_pets:nth-child(4){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .cards__elem_type_pets{
+    margin: 0 auto 0;
+  }
+}
+
+

@@ -9,3 +9,11 @@
     margin-left: auto;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .footer__image{
+    width: 260px;
+    height: 269px;
+    margin-top: 40px;
+  }
+}

@@ -10,3 +10,10 @@
   color: #545454;
   margin: 0 auto 20px;
 }
+
+@media screen and (max-width: 530px) {
+  .donation__title{
+    font-size: 25px;
+    text-align: center;
+  }
+}

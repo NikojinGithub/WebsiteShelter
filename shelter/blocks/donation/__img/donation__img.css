@@ -10,3 +10,11 @@
     margin: 45px auto 100px;
   }
 }
+
+@media screen and (max-width: 530px) {
+  .donation__img{
+    width: 260px;
+    height: 135px;
+    margin: 42px auto 40px;
+  }
+}

@@ -8,3 +8,10 @@
   align-items: center;
   color: #B2B2B2;
 }
+
+@media screen and (max-width: 530px) {
+  .donation__info{
+   margin: 20px 10px 0;
+   text-align: justify;
+  }
+}

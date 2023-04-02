@@ -1,5 +1,5 @@
 .help__title{
-  width: 310px;
+  max-width: 310px;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -11,4 +11,11 @@
   letter-spacing: 0.06em;
   color: #545454;
   margin: 0 auto 60px;
+}
+
+@media screen and (max-width: 415px) {
+  .help__title{
+    font-size: 25px;
+    margin: 0 45px 42px;
+  }
 }
