@@ -3,15 +3,18 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 1020px;
   height: 435px;
-  gap: 90px;
-  /* gap: 75px; */
-  padding-left: 20px;
+  /* gap: 90px; */
+  gap: 75px;
+  padding-left: 15px;
+  justify-items: center;
   /* padding-top: 10px; */
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 @media screen and (max-width: 1205px){
   .cards {
+    padding-left: 0;
+    width: 580px;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
@@ -19,6 +22,7 @@
 
 @media screen and (max-width: 760px){
   .cards {
+    width: 270px;
     grid-template-columns: 1fr;
   }
 }

@@ -92,16 +92,14 @@ const dataPets = [
 
 
 //Array with random numbers
-  const numbers = [];
+const numbers = [];
 
-  while (numbers.length < 3) {
-    const randomNumber = Math.floor(Math.random() * 6);
-    if (!numbers.includes(randomNumber)) {
-      numbers.push(randomNumber);
-    }
+while (numbers.length < 3) {
+  const randomNumber = Math.floor(Math.random() * 6);
+  if (!numbers.includes(randomNumber)) {
+    numbers.push(randomNumber);
   }
-
-console.log(numbers);
+}
 
 let activeArr = [];
 let leftArr = [];
@@ -112,15 +110,7 @@ function createArr(arr, num){
  return arr;
 }
 
-// function createArrLeft(num){
-//   leftArr = (dataPets.splice(num, 3));
-// }
-
 
 activeArr = createArr(activeArr, numbers[0]);
 leftArr = createArr(leftArr, numbers[1]);
 rightArr = createArr(rightArr, numbers[2]);
-
-console.log(activeArr)
-console.log(leftArr)
-console.log(rightArr)

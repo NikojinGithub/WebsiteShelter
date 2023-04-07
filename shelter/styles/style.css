@@ -111,34 +111,48 @@
 
 .wrapper{
   width: 1020px;
-  height: 435px;
+  height: 440px;
   display: flex;
   flex-direction: row;
   gap: 90px;
   overflow: hidden;
   text-align: center;
+  align-items: center;
 }
 
-.cards-left{
+@media screen and (max-width: 1205px){
+  .wrapper {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 320px){
+  .wrapper {
+    width: 270px;
+  }
+}
+
+
+
+/* .cards-left{ */
   /* margin-left: -1100px; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1020px;
-  height: 435px;
-  gap: 90px;
-  padding-left: 20px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* width: 1020px; */
+  /* height: 435px; */
+  /* gap: 90px; */
+  /* padding-left: 20px; */
   /* padding-top: 10px; */
-}
+/* } */
 
-.cards-right {
+/* .cards-right {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1020px;
   height: 435px;
   gap: 90px;
-  padding-left: 20px;
+  padding-left: 20px; */
   /* padding-top: 10px; */
-}
+/* } */
 
 .courusel{
   position: relative;
@@ -147,26 +161,76 @@
   display: flex;
 }
 
+@media screen and (max-width: 1205px){
+  .courusel {
+    margin-left: -580px;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .courusel {
+  margin-left: -300px;
+  gap: 30px
+  }
+}
+
+
+
+
 @keyframes move-left {
   from {left: 0px;}
-  to {left: -1050px;}
+  to {left: -1035px;}
 }
 
 @keyframes move-right {
   from {left: 0px;}
-  to {left: 1040px;}
-  /* to {left: 1050px;} */
+  to {left: 1035px;}
+}
+
+@media screen and (max-width: 1205px){
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -580px;}
+  }
+
+  @keyframes move-right {
+    from {left: 0px;}
+    to {left: 580px;}
+  }
+}
+
+@media screen and (max-width: 320px){
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -300px;}
+  }
+
+  @keyframes move-right {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
 }
 
 
 
 .transition-left {
   animation-name: move-left;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 
 .transition-right {
   animation-name: move-right;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 
+/* @media screen and (max-width: 768px){
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -1035px;}
+  }
+  
+  @keyframes move-right {
+    from {left: 0px;}
+    to {left: 1035px;}
+  }
+} */

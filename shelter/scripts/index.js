@@ -44,10 +44,9 @@ burgerLinks.forEach(link => {
 //cards
 
 const template = document.querySelector('#card');
-const templateSection = document.querySelector('.cards');
-
-const sectionLeft = document.querySelector('.cards-left');
-const sectionRight = document.querySelector('.cards-right');
+const templateSection = document.querySelector('#cards-active');
+const sectionLeft = document.querySelector('#cards-left');
+const sectionRight = document.querySelector('#cards-right');
 
 //Создание карточки - наполнение контентом
 const createCard = (data) => {
@@ -104,9 +103,7 @@ activeArr.forEach(elem => renderCard(elem));
 
 leftArr.forEach(elem => renderCardLeft(elem));
 
-rightArr.forEach(elem => {
-  renderCardRight(elem)
-});
+rightArr.forEach(elem => renderCardRight(elem));
 
 //function open and close popup
 const openPopup = (popup, page) => {
@@ -132,13 +129,9 @@ popup.addEventListener('click', (evt) => {
 })
 
 //Courusel animation
-
 const btnLeft = document.querySelector('#btn-left');
 const btnRight = document.querySelector('#btn-right');
-const couruselBlock = document.querySelector('.courusel')
-const cardsCenter = document.querySelector('.cards');
-const cardsLeft = document.querySelector('.cards-left');
-const cardsRight = document.querySelector('.cards-right')
+const couruselBlock = document.querySelector('.courusel');
 
 
 //btnLeft
@@ -167,8 +160,35 @@ couruselBlock.addEventListener('animationend', (animationEvent) => {
 
   if(animationEvent.animationName === 'move-left') {
     couruselBlock.classList.remove('transition-left');
+
+    //add right items to active cards.
+    document.querySelector('#cards-active').innerHTML = '';
+    activeArr = [];
+    activeArr.push(...rightArr);
+    activeArr.forEach(elem => renderCard(elem));
+
+    //create new right card with random items.
+    document.querySelector('#cards-right').innerHTML = '';
+    rightArr = [];
+    const randomNumber = Math.floor(Math.random() * 6);
+    rightArr = createArr(rightArr, randomNumber);
+    rightArr.forEach(elem => renderCardRight(elem));
+
   } else {
     couruselBlock.classList.remove('transition-right');
+
+    //add left items to active cards.
+    document.querySelector('#cards-active').innerHTML = '';
+    activeArr = [];
+    activeArr.push(...leftArr);
+    activeArr.forEach(elem => renderCard(elem));
+
+    //create new left card with random items.
+    document.querySelector('#cards-left').innerHTML = '';
+    leftArr = [];
+    const randomNumber = Math.floor(Math.random() * 6);
+    leftArr = createArr(leftArr, randomNumber);
+    leftArr.forEach(elem => renderCardLeft(elem));
   }
 
   btnLeft.addEventListener('click', moveLeft);
@@ -178,7 +198,26 @@ couruselBlock.addEventListener('animationend', (animationEvent) => {
 
 
 
-// document.querySelector('#item-active').innerHTML = '';
+
+
+
+
+//Не работает попап если просто копировать блок.
+    // const itemsLeft = document.querySelector('#cards-left').innerHTML;
+    // document.querySelector('#cards-active').innerHTML = itemsLeft;
+
+
+
+
+
+
+
+
+
+
+
+
+//     document.querySelector('#item-active').innerHTML = '';
 //     activeArr = [];
 //     activeArr.push(...leftArr);
 //     activeArr.forEach(elem => renderCard(elem));
