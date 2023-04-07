@@ -1,0 +1,10 @@
+.burger__link{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+  color: #FAFAFA;
+  list-style: none;
+  text-decoration: none;
+}

@@ -16,18 +16,26 @@
     </a>
     <nav class="nav">
       <ul>
-        <li class="nav__elem"><a class="nav__link nav__link_type_pets" href="../../index.html">About the shelter</a></li>
+        <li class="nav__elem"><a class="nav__link nav__link_type_pets" href="../main/index.html">About the shelter</a></li>
         <li class="nav__elem"><a class="nav__link nav__link_type_pets  nav__link_active-pets" href="#">Our pets</a></li>
-        <li class="nav__elem"><a class="nav__link nav__link_type_pets" href="../../#help">Help the shelter</a></li>
+        <li class="nav__elem"><a class="nav__link nav__link_type_pets" href="../main/#help">Help the shelter</a></li>
         <li class="nav__elem"><a class="nav__link nav__link_type_pets" href="#footer">Contacts</a></li>
       </ul>
     </nav>
     <img class="burger" src="../../images/Burger-pets.svg" alt="Burger">
+    <div class="burger__bg">
+      <nav class="burger__nav">
+        <li><a class="burger__link" href="../main/index.html">About the shelter</a></li>
+        <li><a class="burger__link nav__link_active" href="pages/pets/index.html">Our pets</a></li>
+        <li><a class="burger__link" href="../main/#help">Help the shelter</a></li>
+        <li><a class="burger__link" href="#footer">Contacts</a></li>
+      </nav>
+    </div>
   </header>
   <div class="friends friends_type_pets">
     <h2 class="friends__title friends__title_type_pets">Our friends who are&nbsp;looking for a house</h2>
     <div class="cards cards_type_pets">
-      <div class="cards__elem cards__elem_type_pets">
+      <!-- <div class="cards__elem cards__elem_type_pets">
         <img class="cards__img" src="../../images/pets-katrine.png" alt="katrine">
         <p class="cards__name">Katrine</p>
         <button class="cards__button">Learn more</button>
@@ -66,7 +74,7 @@
         <img class="cards__img" src="../../images/pets-freddie.png" alt="Freddie">
         <p class="cards__name">Freddie</p>
         <button class="cards__button">Learn more</button>
-      </div>
+      </div> -->
     </div>
     <div class="friends__buttons">
       <button class="friends__button friends__button_type_pets">&lt;&lt;</button>
@@ -101,5 +109,34 @@
     </div>
     <img class="footer__image" src="../../images/footer-puppy.png" alt="footer-puppy">
   </div>
+  <div class="popup">
+    <div class="popup__elem">
+      <img class="popup__img" src="../../images/pets-woody.png" alt="">
+      <div class="popup__text">
+        <h2 class="popup__name">Title</h2>
+        <p class="popup__breed">sssssssssssss</p>
+        <p class="popup__description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a
+          new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate
+          to play up a storm in the house if she has all of her favorite toys.</p>
+        <ul class="popup__list">
+          <li class="popup__li"><span class="popup__key">Age: </span><span class="popup__age"></span></li>
+          <li class="popup__li"><span class="popup__key">Inoculations: </span><span class="popup__inoculations"></span></li>
+          <li class="popup__li"><span class="popup__key">Diseases: </span><span class="popup__diseases"></span></li>
+          <li class="popup__li"><span class="popup__key">Parasites: </span><span class="popup__parasites"></span></li>
+        </ul>
+        <!-- <button class="popup__button">&#43</button> -->
+        <button class="popup__button"><img src="../../images/Vector.png"></button>
+      </div>
+    </div>
+  </div>
+  <template id="card">
+    <div class="cards__elem">
+      <img class="cards__img" src="" alt="">
+      <p class="cards__name"></p>
+      <button class="cards__button">Learn more</button>
+    </div>
+  </template>
+  <script src="../../scripts/pets.js"></script>
+  <script src="../../scripts/index.js"></script>
 </body>
 </html>

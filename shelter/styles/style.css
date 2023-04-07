@@ -3,6 +3,7 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/html/html.css);
 
+@import url(../blocks/main/_fixed/main_type_fixed.css);
 @import url(../blocks/start/start.css);
 
 @import url(../blocks/header/header.css);
@@ -16,6 +17,12 @@
 @import url(../blocks/nav/__link/_active/nav__link_active.css);
 @import url(../blocks/nav/__elem/nav__elem.css);
 @import url(../blocks/burger/burger.css);
+@import url(../blocks/burger/__nav/burger__nav.css);
+@import url(../blocks/burger/__link/burger__link.css);
+@import url(../blocks/burger/_active/burger__nav_type_active.css);
+@import url(../blocks/burger/_active/burger_type_active.css);
+@import url(../blocks/burger/__bg/burger__bg.css);
+@import url(../blocks/burger/_active/burger__bg_type_active.css);
 
 @import url(../blocks/only/only.css);
 @import url(../blocks/only/__text/only__text.css);
@@ -86,3 +93,80 @@
 @import url(../blocks/friends/__button/_pets/friends__button_type_pets.css);
 @import url(../blocks/friends/__button/_active/friends__button_type_active.css);
 @import url(../blocks/friends/_pets/friends_type_pets.css);
+
+/* Popup */
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__elem/popup__elem.css);
+@import url(../blocks/popup/__img/popup__img.css);
+@import url(../blocks/popup/__text/popup__text.css);
+@import url(../blocks/popup/__description/popup__description.css);
+@import url(../blocks/popup/__name/popup__name.css);
+@import url(../blocks/popup/__breed/popup__breed.css);
+@import url(../blocks/popup/__list/popup__list.css);
+@import url(../blocks/popup/__key/popup__key.css);
+@import url(../blocks/popup/__li/popup__li.css);
+@import url(../blocks/popup/__button/popup__button.css);
+@import url(../blocks/popup/_active/popup_type_active.css);
+
+.wrapper{
+  width: 1020px;
+  height: 435px;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cards-left{
+  /* margin-left: -1100px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1020px;
+  height: 435px;
+  gap: 90px;
+  padding-left: 20px;
+  /* padding-top: 10px; */
+}
+
+.cards-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1020px;
+  height: 435px;
+  gap: 90px;
+  padding-left: 20px;
+  /* padding-top: 10px; */
+}
+
+.courusel{
+  position: relative;
+  width: 3120px;
+  margin-left: -1050px;
+  display: flex;
+}
+
+@keyframes move-left {
+  from {left: 0px;}
+  to {left: -1050px;}
+}
+
+@keyframes move-right {
+  from {left: 0px;}
+  to {left: 1040px;}
+  /* to {left: 1050px;} */
+}
+
+
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 5s;
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 5s;
+}
+

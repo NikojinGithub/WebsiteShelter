@@ -1,0 +1,16 @@
+.burger__nav{
+  width: 320px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  flex-direction: column;
+  position: absolute;
+  right: -320px;
+  top: 0;
+  background-color: #292929;
+  padding-top: 248px;
+  list-style: none;
+  visibility: hidden;
+  transition: .7s;
+}

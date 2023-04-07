@@ -1,9 +1,15 @@
 .burger{
   display: none;
+  transition: .7s;
+}
+
+.burger:hover{
+  cursor: pointer;
 }
 
 @media screen and (max-width: 765px) {
   .burger{
     display: block;
+    z-index: 1;
   }
 }

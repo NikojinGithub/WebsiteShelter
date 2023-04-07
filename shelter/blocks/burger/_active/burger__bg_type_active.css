@@ -1,0 +1,5 @@
+.burger__bg_type_active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}

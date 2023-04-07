@@ -1,0 +1,4 @@
+.burger__nav_type_active{
+  visibility: visible;
+  transform: translate(-320px);
+}
