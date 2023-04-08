@@ -95,6 +95,8 @@ const renderCardRight = (data) => {
   sectionRight.append(createCard(data));
 }
 
+
+
 // dataPets.forEach(elem => {
 //     renderCard(elem)
 // });
@@ -170,10 +172,13 @@ couruselBlock.addEventListener('animationend', (animationEvent) => {
     //create new right card with random items.
     document.querySelector('#cards-right').innerHTML = '';
     rightArr = [];
-    const randomNumber = Math.floor(Math.random() * 6);
-    rightArr = createArr(rightArr, randomNumber);
-    rightArr.forEach(elem => renderCardRight(elem));
+    document.querySelector('#cards-left').innerHTML = '';
+    leftArr = [];
 
+    rightArr = createArr(rightArr, activeArr, dataPets);
+    rightArr.forEach(elem => renderCardRight(elem));
+    leftArr = createArr(leftArr, activeArr, dataPets);
+    leftArr.forEach(elem => renderCardLeft(elem));
   } else {
     couruselBlock.classList.remove('transition-right');
 
@@ -186,14 +191,28 @@ couruselBlock.addEventListener('animationend', (animationEvent) => {
     //create new left card with random items.
     document.querySelector('#cards-left').innerHTML = '';
     leftArr = [];
-    const randomNumber = Math.floor(Math.random() * 6);
-    leftArr = createArr(leftArr, randomNumber);
+    document.querySelector('#cards-right').innerHTML = '';
+    rightArr = [];
+
+    leftArr = createArr(leftArr, activeArr, dataPets);
     leftArr.forEach(elem => renderCardLeft(elem));
+    rightArr = createArr(rightArr, activeArr, dataPets);
+    rightArr.forEach(elem => renderCardRight(elem));
   }
 
   btnLeft.addEventListener('click', moveLeft);
   btnRight.addEventListener('click', moveRight)
 })
+
+//Корусель закончена. -4 балла не сохраняет предыдущее положение, каждый раз новый набор.
+
+
+
+
+
+
+
+
 
 
 

@@ -92,10 +92,38 @@ const dataPets = [
 
 
 //Array with random numbers
+// const numbers = [];
+
+// while (numbers.length < 3) {
+//   const randomNumber = Math.floor(Math.random() * 6);
+//   if (!numbers.includes(randomNumber)) {
+//     numbers.push(randomNumber);
+//   }
+// }
+
+// let activeArr = [];
+// let leftArr = [];
+// let rightArr = [];
+
+// function createArr(arr, num){
+//  arr.push(...dataPets.slice(num, num + 3));
+//  return arr;
+// }
+
+
+// activeArr = createArr(activeArr, numbers[0]);
+// leftArr = createArr(leftArr, numbers[1]);
+// rightArr = createArr(rightArr, numbers[2]);
+
+
+
+
+//MAIN page arrays.
+
 const numbers = [];
 
 while (numbers.length < 3) {
-  const randomNumber = Math.floor(Math.random() * 6);
+  const randomNumber = Math.floor(Math.random() * 8);
   if (!numbers.includes(randomNumber)) {
     numbers.push(randomNumber);
   }
@@ -105,12 +133,31 @@ let activeArr = [];
 let leftArr = [];
 let rightArr = [];
 
-function createArr(arr, num){
- arr.push(...dataPets.slice(num, num + 3));
- return arr;
+
+console.log(leftArr)
+
+numbers.forEach(item => {
+  activeArr.push(dataPets[item]);
+})
+
+console.log(activeArr);
+
+
+function createArr(newArr, active, data){
+    data.forEach(item => {
+      if(!active.includes(item)){
+        newArr.push(item);
+      }
+    })
+  return newArr.sort(() => Math.random() - 0.5).slice(0,3);
 }
 
 
-activeArr = createArr(activeArr, numbers[0]);
-leftArr = createArr(leftArr, numbers[1]);
-rightArr = createArr(rightArr, numbers[2]);
+leftArr = createArr(leftArr, activeArr, dataPets);
+rightArr = createArr(rightArr, activeArr, dataPets);
+console.log(leftArr)
+console.log(rightArr)
+
+
+
+//PETS page arrays

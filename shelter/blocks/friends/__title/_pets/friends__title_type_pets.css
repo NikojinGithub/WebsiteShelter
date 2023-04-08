@@ -1,3 +1,8 @@
+.friends__title_type_pets{
+  margin: 0 auto 55px;
+}
+
+
 @media screen and (max-width: 1215px) {
   .friends__title_type_pets{
     margin-bottom: 30px;

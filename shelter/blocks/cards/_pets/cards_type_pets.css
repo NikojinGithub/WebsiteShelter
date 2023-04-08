@@ -1,9 +1,13 @@
 .cards_type_pets{
+  width: 0;
   max-width: 1200px;
-  margin: 0 auto 58px;
+  height: 875px;
+  /* margin: 0 auto 58px; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  /* gap: 0px 40px; */
   gap: 30px 40px;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 1230px) {

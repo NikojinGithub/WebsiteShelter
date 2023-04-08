@@ -1,0 +1,21 @@
+.wrapper{
+  width: 1020px;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1205px){
+  .wrapper {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 320px){
+  .wrapper {
+    width: 270px;
+  }
+}

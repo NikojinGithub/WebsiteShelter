@@ -1,5 +1,7 @@
 .friends__button_type_pets{
   margin-top: 0;
+  /* display: flex;
+  gap: 30px; */
 }
 
 .friends__button_type_pets:nth-child(1){

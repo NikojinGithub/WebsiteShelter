@@ -1,0 +1,68 @@
+.courusel{
+  position: relative;
+  width: 3120px;
+  margin-left: -1050px;
+  display: flex;
+}
+
+@media screen and (max-width: 1205px){
+  .courusel {
+    margin-left: -580px;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .courusel {
+  margin-left: -300px;
+  gap: 30px
+  }
+}
+
+
+
+
+@keyframes move-left {
+  from {left: 0px;}
+  to {left: -1035px;}
+}
+
+@keyframes move-right {
+  from {left: 0px;}
+  to {left: 1035px;}
+}
+
+@media screen and (max-width: 1205px){
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -580px;}
+  }
+
+  @keyframes move-right {
+    from {left: 0px;}
+    to {left: 580px;}
+  }
+}
+
+@media screen and (max-width: 320px){
+  @keyframes move-left {
+    from {left: 0px;}
+    to {left: -300px;}
+  }
+
+  @keyframes move-right {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+}
+
+
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+}

@@ -34,54 +34,24 @@
   </header>
   <div class="friends friends_type_pets">
     <h2 class="friends__title friends__title_type_pets">Our friends who are&nbsp;looking for a house</h2>
-    <div class="cards cards_type_pets">
-      <!-- <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-katrine.png" alt="katrine">
-        <p class="cards__name">Katrine</p>
-        <button class="cards__button">Learn more</button>
+    <div class="wrapper-pets">
+      <div class="courusel-pets">
+        <div class="cards cards_type_pets" id="pets-one"></div>
+        <div class="cards cards_type_pets" id="pets-two"></div>
+        <div class="cards cards_type_pets" id="pets-three"></div>
+        <div class="cards cards_type_pets" id="pets-four"></div>
+        <div class="cards cards_type_pets" id="pets-five"></div>
+        <div class="cards cards_type_pets" id="pets-six"></div>
+        <div class="cards cards_type_pets" id="pets-seven"></div>
+        <div class="cards cards_type_pets" id="pets-eight"></div>
       </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-jennifer.png" alt="Jennifer">
-        <p class="cards__name">Jennifer</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-woody.png" alt="Woody">
-        <p class="cards__name">Woody</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-sophia.png" alt="Sophia">
-        <p class="cards__name">Sophia</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-timmy.png" alt="Timmy">
-        <p class="cards__name">Timmy</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-charly.png" alt="Charly">
-        <p class="cards__name">Charly</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-scarlet.png" alt="Scarlett">
-        <p class="cards__name">Scarlett</p>
-        <button class="cards__button">Learn more</button>
-      </div>
-      <div class="cards__elem cards__elem_type_pets">
-        <img class="cards__img" src="../../images/pets-freddie.png" alt="Freddie">
-        <p class="cards__name">Freddie</p>
-        <button class="cards__button">Learn more</button>
-      </div> -->
     </div>
     <div class="friends__buttons">
-      <button class="friends__button friends__button_type_pets">&lt;&lt;</button>
-      <button class="friends__button friends__button_type_pets">&lt;</button>
-      <button class="friends__button friends__button_type_pets friends__button_type_active">1</button>
-      <button class="friends__button friends__button_type_pets">&gt;</button>
-      <button class="friends__button friends__button_type_pets">&gt;&gt;</button>
+      <button class="friends__button friends__button_type_pets" id="pets-begin-btn">&lt;&lt;</button>
+      <button class="friends__button friends__button_type_pets" id="pets-left-btn">&lt;</button>
+      <button class="friends__button friends__button_type_pets friends__button_type_active" id="pets-count-btn">1</button>
+      <button class="friends__button friends__button_type_pets" id="pets-right-btn">&gt;</button>
+      <button class="friends__button friends__button_type_pets" id="pets-end-btn">&gt;&gt;</button>
     </div>
   </div>
   <div class="footer" id="footer">
@@ -137,6 +107,49 @@
     </div>
   </template>
   <script src="../../scripts/pets.js"></script>
-  <script src="../../scripts/index.js"></script>
+  <script src="../../scripts/index-pets.js"></script>
 </body>
 </html>
+
+
+
+<!-- <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-katrine.png" alt="katrine">
+        <p class="cards__name">Katrine</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-jennifer.png" alt="Jennifer">
+        <p class="cards__name">Jennifer</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-woody.png" alt="Woody">
+        <p class="cards__name">Woody</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-sophia.png" alt="Sophia">
+        <p class="cards__name">Sophia</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-timmy.png" alt="Timmy">
+        <p class="cards__name">Timmy</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-charly.png" alt="Charly">
+        <p class="cards__name">Charly</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-scarlet.png" alt="Scarlett">
+        <p class="cards__name">Scarlett</p>
+        <button class="cards__button">Learn more</button>
+      </div>
+      <div class="cards__elem cards__elem_type_pets">
+        <img class="cards__img" src="../../images/pets-freddie.png" alt="Freddie">
+        <p class="cards__name">Freddie</p>
+        <button class="cards__button">Learn more</button>
+      </div> -->
