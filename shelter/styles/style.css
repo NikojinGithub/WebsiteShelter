@@ -92,6 +92,7 @@
 @import url(../blocks/friends/__buttons/friends__buttons.css);
 @import url(../blocks/friends/__button/_pets/friends__button_type_pets.css);
 @import url(../blocks/friends/__button/_active/friends__button_type_active.css);
+@import url(../blocks/friends/__button/_disabled/friends__button_type_disabled.css);
 @import url(../blocks/friends/_pets/friends_type_pets.css);
 
 /* Popup */
@@ -117,26 +118,37 @@
 .wrapper-pets{
   width: 1200px;
   height: 930px;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  border: 1px solid black;
   /* gap: 90px; */
   /* overflow: hidden; */
-  text-align: center;
-  align-items: flex-start;
+  /* text-align: center;
+  align-items: flex-start; */
   margin: 0 auto 0;
   padding: 5px;
 }
 
-.courusel-pets{
-  position: relative;
-  width: 9600px;
-  margin-right: -7500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@media screen and (max-width: 1230px) {
+  .wrapper-pets{
+    width: 750px;
+    height: 1365px;
+  }
+
 }
 
-@keyframes move-left-pets {
+.slider-pets{
+  position: relative;
+  width: 9600px;
+  /* margin-right: -7500px; */
+  display: flex;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 2s;
+}
+
+/* @keyframes move-left-pets {
   from {left: 0px;}
   to {left: -1200px;}
 }
@@ -181,4 +193,4 @@
     from {left: 0px;}
     to {left: 300px;}
   }
-}
+} */

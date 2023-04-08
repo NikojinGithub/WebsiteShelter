@@ -161,3 +161,26 @@ console.log(rightArr)
 
 
 //PETS page arrays
+
+//Создаем массив из 48 элементов.
+const arrayForPetsPage = [];
+
+for(let i = 0; i < 6; i++){
+ dataPets.sort(() => Math.random() - 0.5);
+ arrayForPetsPage.push(...dataPets);
+}
+
+console.log(arrayForPetsPage)
+
+//Создаем 6 наборов по 8 элементов.
+function chunked(arr, size) {
+  let result = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+}
+
+const setOfCards = chunked(arrayForPetsPage, 8);
+
+console.log(setOfCards)

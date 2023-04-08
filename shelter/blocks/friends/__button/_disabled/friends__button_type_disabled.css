@@ -1,0 +1,5 @@
+.friends__button_type_disabled{
+  pointer-events: none;
+  border-color: #CDCDCD;
+  color:#CDCDCD;
+}

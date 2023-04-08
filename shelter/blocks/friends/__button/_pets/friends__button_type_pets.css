@@ -4,7 +4,7 @@
   gap: 30px; */
 }
 
-.friends__button_type_pets:nth-child(1){
+/* .friends__button_type_pets:nth-child(1){
   pointer-events: none;
   border-color: #CDCDCD;
   color:#CDCDCD;
@@ -14,4 +14,4 @@
   pointer-events: none;
   border-color: #CDCDCD;
   color:#CDCDCD;
-}
+} */
