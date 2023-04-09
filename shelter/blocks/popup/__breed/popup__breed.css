@@ -8,3 +8,10 @@
   letter-spacing: 0.06em;
   color: #000000;
 }
+
+@media screen and (max-width: 735px){
+  .popup__breed{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

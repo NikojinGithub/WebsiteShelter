@@ -18,9 +18,9 @@ const sectionPetsSixteen = document.querySelector('#pets-sixteen');
 
 const sliderPets = document.querySelector('.slider-pets');
 
-const popup = document.querySelector('.popup');
-const popupButton = popup.querySelector('.popup__button');
-const popupElement = popup.querySelector('.popup__elem');
+// const popup = document.querySelector('.popup');
+// const popupButton = popup.querySelector('.popup__button');
+// const popupElement = popup.querySelector('.popup__elem');
 
 const rightBtnPets = document.querySelector('#pets-right-btn');
 const leftBtnPets = document.querySelector('#pets-left-btn');
@@ -29,42 +29,42 @@ const lastPageButton = document.querySelector('#pets-end-btn');
 const firstPageButton = document.querySelector('#pets-begin-btn');
 
 
-const template = document.querySelector('#card');
+// const template = document.querySelector('#card');
 
 
-//Создание карточки - наполнение контентом
-const createCard = (data) => {
-  const card = template.content.querySelector('.cards__elem').cloneNode(true);
-  const cardImg = card.querySelector('.cards__img');
-  const cardName = card.querySelector('.cards__name');
-  cardImg.src = data.img;
-  cardImg.alt = data.name;
-  cardName.textContent = data.name;
+// //Создание карточки - наполнение контентом
+// const createCard = (data) => {
+//   const card = template.content.querySelector('.cards__elem').cloneNode(true);
+//   const cardImg = card.querySelector('.cards__img');
+//   const cardName = card.querySelector('.cards__name');
+//   cardImg.src = data.img;
+//   cardImg.alt = data.name;
+//   cardName.textContent = data.name;
 
-  // const popupImg = popup.querySelector('.popup__img');
-  // const popupName = popup.querySelector('.popup__name');
-  // const popupBreed = popup.querySelector('.popup__breed');
-  // const popupDescription = popup.querySelector('.popup__description');
-  // const popupAge = popup.querySelector('.popup__age')
-  // const popupInoculations = popup.querySelector('.popup__inoculations')
-  // const popupDiseases = popup.querySelector('.popup__diseases')
-  // const popupParasites = popup.querySelector('.popup__parasites')
+//   // const popupImg = popup.querySelector('.popup__img');
+//   // const popupName = popup.querySelector('.popup__name');
+//   // const popupBreed = popup.querySelector('.popup__breed');
+//   // const popupDescription = popup.querySelector('.popup__description');
+//   // const popupAge = popup.querySelector('.popup__age')
+//   // const popupInoculations = popup.querySelector('.popup__inoculations')
+//   // const popupDiseases = popup.querySelector('.popup__diseases')
+//   // const popupParasites = popup.querySelector('.popup__parasites')
 
-  // card.addEventListener('click', () => {
-  //   popupImg.src = data.img;
-  //   popupName.textContent = data.name;
-  //   popupBreed.textContent = data.breed;
-  //   popupDescription.textContent = data.description;
-  //   popupAge.textContent = data.age;
-  //   popupInoculations.textContent = data.inoculations;
-  //   popupDiseases.textContent = data.diseases;
-  //   popupParasites.textContent = data.parasites;
-  //   openPopup(popup);
-  // })
+//   // card.addEventListener('click', () => {
+//   //   popupImg.src = data.img;
+//   //   popupName.textContent = data.name;
+//   //   popupBreed.textContent = data.breed;
+//   //   popupDescription.textContent = data.description;
+//   //   popupAge.textContent = data.age;
+//   //   popupInoculations.textContent = data.inoculations;
+//   //   popupDiseases.textContent = data.diseases;
+//   //   popupParasites.textContent = data.parasites;
+//   //   openPopup(popup);
+//   // })
 
 
-  return card;
-}
+//   return card;
+// }
 
 //Отрисовка карточки на странице
 const renderCard = (template, data) => {
@@ -96,7 +96,7 @@ let pageNumber = 1;
 //числом пикселей при движении слайдера. Попробовать в %?
 //Добавить min - max
 
-if (window.matchMedia('(min-width: 1231px) and (max-width: 1600px)').matches) {
+if (window.matchMedia('(min-width: 1231px)').matches) {
 
   rightBtnPets.addEventListener('click', () => {
     offset += 1233;

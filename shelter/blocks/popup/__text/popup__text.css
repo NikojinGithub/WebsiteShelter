@@ -5,3 +5,17 @@
   flex-direction: column;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 1050px){
+  .popup__text{
+    margin-top: 10px;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 735px){
+  .popup__text{
+    width: 95%;
+    margin: 10px;
+  }
+}

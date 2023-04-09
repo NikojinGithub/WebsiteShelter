@@ -9,4 +9,5 @@
   visibility: hidden;
   pointer-events: none;
   transition: .7s;
+  z-index: 1;
 }
