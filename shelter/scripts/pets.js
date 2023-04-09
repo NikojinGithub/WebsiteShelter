@@ -89,35 +89,6 @@ const dataPets = [
   }
 ]
 
-
-
-//Array with random numbers
-// const numbers = [];
-
-// while (numbers.length < 3) {
-//   const randomNumber = Math.floor(Math.random() * 6);
-//   if (!numbers.includes(randomNumber)) {
-//     numbers.push(randomNumber);
-//   }
-// }
-
-// let activeArr = [];
-// let leftArr = [];
-// let rightArr = [];
-
-// function createArr(arr, num){
-//  arr.push(...dataPets.slice(num, num + 3));
-//  return arr;
-// }
-
-
-// activeArr = createArr(activeArr, numbers[0]);
-// leftArr = createArr(leftArr, numbers[1]);
-// rightArr = createArr(rightArr, numbers[2]);
-
-
-
-
 //MAIN page arrays.
 
 const numbers = [];
@@ -133,15 +104,9 @@ let activeArr = [];
 let leftArr = [];
 let rightArr = [];
 
-
-console.log(leftArr)
-
 numbers.forEach(item => {
   activeArr.push(dataPets[item]);
 })
-
-console.log(activeArr);
-
 
 function createArr(newArr, active, data){
     data.forEach(item => {
@@ -152,12 +117,8 @@ function createArr(newArr, active, data){
   return newArr.sort(() => Math.random() - 0.5).slice(0,3);
 }
 
-
 leftArr = createArr(leftArr, activeArr, dataPets);
 rightArr = createArr(rightArr, activeArr, dataPets);
-console.log(leftArr)
-console.log(rightArr)
-
 
 
 //PETS page arrays
@@ -170,8 +131,6 @@ for(let i = 0; i < 6; i++){
  arrayForPetsPage.push(...dataPets);
 }
 
-console.log(arrayForPetsPage)
-
 //Создаем 6 наборов по 8 элементов.
 function chunked(arr, size) {
   let result = [];
@@ -182,5 +141,3 @@ function chunked(arr, size) {
 }
 
 const setOfCards = chunked(arrayForPetsPage, 8);
-
-console.log(setOfCards)

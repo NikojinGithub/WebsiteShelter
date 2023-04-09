@@ -2,15 +2,15 @@
 const popup = document.querySelector('.popup');
 const popupButton = popup.querySelector('.popup__button');
 const popupElement = popup.querySelector('.popup__elem');
+const mainPage = document.querySelector('.main');
 
 //cards
-
 const template = document.querySelector('#card');
 const templateSection = document.querySelector('#cards-active');
 const sectionLeft = document.querySelector('#cards-left');
 const sectionRight = document.querySelector('#cards-right');
 
-//Создание карточки - наполнение контентом
+//Создание карточки - наполнение контентом - наполнение попапа.
 const createCard = (data) => {
   const card = template.content.querySelector('.cards__elem').cloneNode(true);
   const cardImg = card.querySelector('.cards__img');
@@ -30,41 +30,38 @@ const createCard = (data) => {
 
   card.addEventListener('click', () => {
     popupImg.src = data.img;
+    popupImg.alt = data.name;
     popupName.textContent = data.name;
-    popupBreed.textContent = data.breed;
+    popupBreed.textContent = `${data.type} - ${data.breed}`;
     popupDescription.textContent = data.description;
     popupAge.textContent = data.age;
     popupInoculations.textContent = data.inoculations;
     popupDiseases.textContent = data.diseases;
     popupParasites.textContent = data.parasites;
-    openPopup(popup);
+    openPopup(popup, mainPage);
   })
 
-
   return card;
-}
-
-
+};
 
 //function open and close popup
 const openPopup = (popup, page) => {
   popup.classList.add('popup_type_active');
-  // page.classList.add('main_type_fixed');
+  page.classList.add('main_type_disabled');
+};
+
+const closePopup = (popup, page) => {
+  popup.classList.remove('popup_type_active');
+  page.classList.remove('main_type_disabled');
+};
+
+//Close popup
+popupButton.addEventListener('click', () => {
+  closePopup(popup, mainPage);
+});
+
+popup.addEventListener('click', (evt) => {
+  if(evt.target === popup){
+    closePopup(popup, mainPage);
   }
-  
-  const closePopup = (popup, page) => {
-    popup.classList.remove('popup_type_active');
-    // page.classList.remove('main_type_fixed');
-  }
-  
-  
-  //Close popup
-  popupButton.addEventListener('click', () => {
-    closePopup(popup);
-  })
-  
-  popup.addEventListener('click', (evt) => {
-    if(evt.target === popup){
-      closePopup(popup);
-    }
-  })
+});

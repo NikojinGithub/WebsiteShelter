@@ -13,4 +13,6 @@
   list-style: none;
   visibility: hidden;
   transition: .7s;
+  margin: 0;
+  padding-left: 0;
 }

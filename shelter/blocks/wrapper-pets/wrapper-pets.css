@@ -1,0 +1,23 @@
+.wrapper-pets{
+  width: 1200px;
+  height: 930px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  margin: 0 auto 0;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1230px) {
+  .wrapper-pets{
+    width: 750px;
+    height: 1365px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .wrapper-pets{
+    width: 298px;
+    height: 1370px;
+    padding: 5px 5px 5px 5px;
+  }
+}

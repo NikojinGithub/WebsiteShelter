@@ -4,6 +4,7 @@
 @import url(../blocks/html/html.css);
 
 @import url(../blocks/main/_fixed/main_type_fixed.css);
+@import url(../blocks/main/_disabled/main_type_disabled.css);
 @import url(../blocks/start/start.css);
 
 @import url(../blocks/header/header.css);
@@ -23,6 +24,7 @@
 @import url(../blocks/burger/_active/burger_type_active.css);
 @import url(../blocks/burger/__bg/burger__bg.css);
 @import url(../blocks/burger/_active/burger__bg_type_active.css);
+@import url(../blocks/burger/__link/_active/burger__link_active.css);
 
 @import url(../blocks/only/only.css);
 @import url(../blocks/only/__text/only__text.css);
@@ -113,45 +115,5 @@
 /* wrapper and courusel and animation */
 @import url(../blocks/wrapper/wrapper.css);
 @import url(../blocks/courusel/courusel.css);
-
-
-.wrapper-pets{
-  width: 1200px;
-  height: 930px;
-  border: 1px solid black;
-  overflow: hidden;
-  margin: 0 auto 0;
-  padding: 5px;
-}
-
-@media screen and (max-width: 1230px) {
-  .wrapper-pets{
-    width: 750px;
-    height: 1365px;
-  }
-}
-
-@media screen and (max-width: 765px) {
-  .wrapper-pets{
-    width: 298px;
-    height: 1370px;
-    padding: 5px 5px 5px 5px;
-  }
-}
-
-
-.slider-pets{
-  position: relative;
-  width: 18500px;
-  display: flex;
-  left: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  transition: 2s;
-}
-
-@media screen and (max-width: 765px) {
-  .slider-pets{
-    width: 5000px;
-  }
-}
+@import url(../blocks/wrapper-pets/wrapper-pets.css);
+@import url(../blocks/slider-pets/slider-pets.css);

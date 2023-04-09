@@ -1,0 +1,15 @@
+.slider-pets{
+  position: relative;
+  width: 18500px;
+  display: flex;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 2s;
+}
+
+@media screen and (max-width: 765px) {
+  .slider-pets{
+    width: 5000px;
+  }
+}

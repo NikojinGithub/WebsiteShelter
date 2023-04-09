@@ -8,6 +8,7 @@
 @media screen and (max-width: 1205px){
   .courusel {
     margin-left: -580px;
+    gap: 5px;
   }
 }
 
@@ -34,12 +35,12 @@
 @media screen and (max-width: 1205px){
   @keyframes move-left {
     from {left: 0px;}
-    to {left: -580px;}
+    to {left: -585px;}
   }
 
   @keyframes move-right {
     from {left: 0px;}
-    to {left: 580px;}
+    to {left: 585px;}
   }
 }
 
