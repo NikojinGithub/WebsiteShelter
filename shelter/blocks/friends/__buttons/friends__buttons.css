@@ -17,6 +17,6 @@
 @media screen and (max-width: 740px) {
   .friends__buttons{
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 10px;
   }
 }

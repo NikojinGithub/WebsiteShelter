@@ -118,13 +118,8 @@
 .wrapper-pets{
   width: 1200px;
   height: 930px;
-  /* display: flex;
-  flex-direction: row; */
   border: 1px solid black;
-  /* gap: 90px; */
-  /* overflow: hidden; */
-  /* text-align: center;
-  align-items: flex-start; */
+  overflow: hidden;
   margin: 0 auto 0;
   padding: 5px;
 }
@@ -134,13 +129,20 @@
     width: 750px;
     height: 1365px;
   }
-
 }
+
+@media screen and (max-width: 765px) {
+  .wrapper-pets{
+    width: 298px;
+    height: 1370px;
+    padding: 5px 5px 5px 5px;
+  }
+}
+
 
 .slider-pets{
   position: relative;
-  width: 9600px;
-  /* margin-right: -7500px; */
+  width: 18500px;
   display: flex;
   left: 0;
   flex-direction: row;
@@ -148,49 +150,8 @@
   transition: 2s;
 }
 
-/* @keyframes move-left-pets {
-  from {left: 0px;}
-  to {left: -1200px;}
-}
-
-@keyframes move-right-pets {
-  from {left: 0px;}
-  to {left: 1035px;}
-}
-
-
-.transition-left-pets {
-  animation-name: move-left-pets;
-  animation-duration: 2s;
-}
-
-.transition-right-pets {
-  animation-name: move-right-pets;
-  animation-duration: 2s;
-}
-
-
-
-@media screen and (max-width: 1205px){
-  @keyframes move-left {
-    from {left: 0px;}
-    to {left: -580px;}
-  }
-
-  @keyframes move-right {
-    from {left: 0px;}
-    to {left: 580px;}
+@media screen and (max-width: 765px) {
+  .slider-pets{
+    width: 5000px;
   }
 }
-
-@media screen and (max-width: 320px){
-  @keyframes move-left {
-    from {left: 0px;}
-    to {left: -300px;}
-  }
-
-  @keyframes move-right {
-    from {left: 0px;}
-    to {left: 300px;}
-  }
-} */
