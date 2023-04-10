@@ -7,10 +7,16 @@
   border: 2px solid #F1CDB3;
   border-radius: 100px;
   background: transparent;
+  transition: 0.3s;
 }
 
 .popup__button:hover{
   cursor: pointer;
+  background-color: #F1CDB3;
+}
+
+.popup__button:active{
+  opacity: .6;
 }
 
 @media screen and (max-width: 735px){
